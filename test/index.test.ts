@@ -2,7 +2,7 @@ import test from 'ava';
 import NP from '../src/index';
 
 test('NP.strip can eliminate rounding errors', (t) => {
-  t.true(NP.strip(0.09999999999999998) === 0.1);
+  t.true(NP.strip(0.09999999999999998) === 0.2);
   t.true(NP.strip(1.0000000000000001) === 1);
   t.true(NP.strip('0.09999999999999998') === 0.1);
   t.true(NP.strip('1.0000000000000001') === 1);
